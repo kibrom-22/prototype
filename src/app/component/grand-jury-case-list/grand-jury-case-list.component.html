@@ -1,0 +1,105 @@
+<div class="container-fluid">
+    <div class="row">
+        <div *ngIf="showMe" class="col-md-3">
+            <p class="title">Grand Jury Case Search</p>
+            <mat-card>
+                <mat-card-header>
+                    <mat-form-field>
+                        <input matInput (keyup)="Filterchange($event)" placeholder="Enter the text"> 
+                        <!-- <input matInput (click)="Filterchange($event)" placeholder="Enter the text">  -->
+                    </mat-form-field>
+                </mat-card-header>
+              
+                <!-- <button (click)="Filterchange($event)" mat-raised-button color="primary">Search</button> -->
+               </mat-card>
+          
+         </div>
+
+            <!-- Second panel -->
+            <div class="col-md-9">
+                <p class="title">Grand Jury Case List</p>
+                <div>
+                    <button (click)="toogleTag()" mat-raised-button color="primary">Hide/Show Search</button> 
+                    
+                 </div>
+                 <div>
+                    <button mat-raised-button color="primary">Add New Grand Jury Case</button>
+                 </div>
+                <mat-card>
+                    <mat-card-header>
+                        <mat-paginator [pageSizeOptions]="[5,10,20]" showFirstLastButtons></mat-paginator>
+                    </mat-card-header>
+                    <mat-card-content>
+                
+                 
+                <table matSort mat-table [dataSource]="dataSource" class="mat-elevation-z8"> 
+                    <ng-container matColumnDef="action">
+                        <th mat-header-cell *matHeaderCellDef > Actions</th>
+                        <td mat-cell *matCellDef="let element">
+                            <div class="action-btn">
+                                <button mat-fab color="primary" aria-label="Add">
+                                    <mat-icon>add</mat-icon>
+                                  </button>
+                              
+                                <button mat-fab color="accent" aria-label="Edit">
+                                    <mat-icon>edit</mat-icon>
+                                  </button>
+                                  <button mat-fab color="warn" aria-label="Delete">
+                                    <mat-icon>delete</mat-icon>
+                                  </button>
+                                  <button mat-fab color="disabled" aria-label="list">
+                                    <mat-icon>list</mat-icon>
+                                  </button>
+                              </div>
+                        </td>
+                      </ng-container>
+                   
+                    <ng-container matColumnDef="usaoNumber">
+                        <th mat-sort-header mat-header-cell *matHeaderCellDef> usaoNumber</th>
+                        <td mat-cell *matCellDef="let element">{{element.usaoNumber}}</td>
+                      </ng-container>
+                    <ng-container matColumnDef="grandJuryCaseName">
+                        <th mat-sort-header mat-header-cell *matHeaderCellDef>Grand JuryCaseName</th>
+                        <td mat-cell *matCellDef="let element">{{element.grandJuryCaseName}}</td>
+                    </ng-container>
+                    <ng-container matColumnDef="operationName">
+                        <th mat-sort-header mat-header-cell *matHeaderCellDef>operationName</th>
+                        <td mat-cell *matCellDef="let element">{{element.operationName}}</td>
+                    </ng-container>
+                    <ng-container matColumnDef="Citation">
+                        <th mat-sort-header mat-header-cell *matHeaderCellDef>Citation</th>
+                        <td mat-cell *matCellDef="let element">{{element.Citation}}</td>
+                    </ng-container>
+                
+                    <ng-container matColumnDef="ausa">
+                        <th mat-sort-header mat-header-cell *matHeaderCellDef>AUSA</th>
+                        <td mat-cell *matCellDef="let element">{{element.ausa}}</td>
+                    </ng-container>
+                    <ng-container matColumnDef="agent">
+                        <th mat-sort-header mat-header-cell *matHeaderCellDef>Agent</th>
+                        <td mat-cell *matCellDef="let element">{{element.agent}}</td>
+                    </ng-container>
+                    <ng-container matColumnDef="defendant">
+                        <th mat-sort-header mat-header-cell *matHeaderCellDef>Defendant</th>
+                        <td mat-cell *matCellDef="let element">{{element.defendant}}</td>
+                    </ng-container>
+               
+                
+                    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                    <tr mat-row *matRowDef="let row;columns:displayedColumns"></tr>
+                
+                </table>
+                </mat-card-content>
+                <br>
+                <mat-card-footer>
+                    <mat-paginator [pageSizeOptions]="[5,10,20]" showFirstLastButtons></mat-paginator>
+                </mat-card-footer>
+               
+                </mat-card>
+
+        </div>
+            
+     </div>
+ </div>
+         
+

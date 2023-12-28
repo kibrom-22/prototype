@@ -1,0 +1,54 @@
+.col-md-3{
+    border-right: solid orange;
+}
+.title{
+    background-color: orange ;
+    width: 100%;
+    margin-right: 1px;
+    margin-left: 1px;
+    height: 30px;
+}
+mat-card{
+    margin: 2%;
+
+}
+
+button{
+    margin: 2px;
+}
+.action-btn{
+    display: flex;
+}
+
+mat-table {
+    border-collapse: separate!important;
+    border-spacing:0 4px!important;
+  }
+
+td {
+    /* row padding */
+    /* padding: 16px 0; */
+    /* row border */
+    /* border-bottom: 1px solid #ffa600;
+    border-top: 1px solid #ffa600; */
+   }
+   
+   td:first-child {
+     /* row border */
+     /* border-left: 1px solid #ffa600; */
+   }
+   
+   td:last-child {
+     /* row border */
+     /* border-right: 1px solid #ffa600; */
+   }
+   
+   table {
+    /* row spacing / margin */
+    border-spacing: 0 8px !important;
+  } 
+
+  th{
+    background-color: navy !important;
+    color: white;
+}

@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+.container{
+    margin-bottom: 0px;
+    font-family: sans-serif;
+    background-color: navy;
+ 
+}
+.circular_image{
+    margin-bottom: 50px;
+    height: 65px;
+    
+}
+.top-title{
+    margin-left: 100px;
+    font-family:Arial, Helvetica, sans-serif;
+    
+   
+}
+.bar {
+    width: 100%;
+  background-color: #ffd500;
+  font-family:Arial, Helvetica, sans-serif;
+  
+}
+.row2{
+height: 50px;
+/* border-top: 1px solid rgb(0, 166, 255); */
+
+}
+
+.header-spacer {
+    flex: 1 1 auto;
+}
+.mat-toolbar {
+  background-color: navy;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.btn2{
+    background-color: navy;
+    color: white;
+    margin-bottom: 0px;
+}
+.btn2:hover{
+    background-color:  rgb(255, 196, 0);
+    overflow: hidden;
+}
+.circular_image {
+    float: left;
+    margin-left: 20px;
+    margin-top: 5px;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    overflow: hidden;
+    
+  }
+
+.field-spacer {
+    flex: 1 1 auto;
+   width: 200px;
+
+}
+.btn1{
+    margin-right: 40px;
+    
+}
+
+.btn1:hover {
+   background-color: rgb(255, 196, 0);
+   border: none;
+   cursor:pointer;
+   overflow: hidden;
+   outline:none;
+}
+.form-select{
+    width: 20%;
+}
+
+.message-tag {
+    background-color:rgb(255, 196, 0);
+    height: 30px;
+}

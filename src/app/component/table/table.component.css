@@ -1,0 +1,16 @@
+.col-md-3{
+    border-right: solid orange;
+}
+mat-card{
+    margin: 2%;
+
+}
+
+button{
+    margin: 2px;
+}
+
+th{
+    background-color: navy !important;
+    color: white;
+}

@@ -1,0 +1,50 @@
+{
+    "gjclist":[
+        {
+            "usaoNumber":1234567,
+    "grandJuryCaseName":"testName",
+    "operationName":"testOperation",
+    "Citation":"testCitation",
+   
+    "ausa":"firstName middleName lastName",
+    "agent":"agent1",
+    "defendant":"defendentName"
+   
+        },
+        {
+            "usaoNumber":2234567,
+    "grandJuryCaseName":"testName",
+    "operationName":"testOperation",
+    "Citation":"testCitation",
+    
+    "ausa":"firstName middleName lastName",
+    "agent":"agent1",
+    "defendant":"defendentName"
+    
+        },
+        {
+            "usaoNumber":3234567,
+    "grandJuryCaseName":"testName",
+    "operationName":"testOperation",
+    "Citation":"testCitation",
+  
+    "ausa":"firstName middleName lastName",
+    "agent":"agent1",
+    "defendant":"defendentName"
+    
+        },
+        {
+            "usaoNumber":4234567,
+    "grandJuryCaseName":"testName",
+    "operationName":"testOperation",
+    "Citation":"testCitation",
+ 
+    "ausa":"firstName middleName lastName",
+    "agent":"agent1",
+    "defendant":"defendentName"
+    
+        }
+    ]
+        }
+
+    

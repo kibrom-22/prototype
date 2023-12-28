@@ -1,0 +1,54 @@
+<div class="container-fluid">
+
+  
+    <p class="bar">
+      <mat-toolbar >
+        <mat-toolbar-row class="mat-elevation-z8">
+       
+          <span class="top-title">Grand Jury Tracking System</span>
+          <span class="header-spacer"></span>
+          
+          <button mat-button>Help:</button>
+          <button mat-button routerLink="login">Signin</button>
+        
+        </mat-toolbar-row>
+    
+        <mat-toolbar-row class="row2">
+          <button routerLink="" mat-button>
+            <img class= "circular_image" src= "assets/images/doj.jpg" alt="tree" width="20" height="20">
+          </button>
+         <button class="btn1" routerLink="table" mat-button>Home</button>
+         <button class="btn1" routerLink="grand-jury-case-list" mat-button>Grand Jury Case</button>
+         <button class="btn1" routerLink="grand-jury-case-calander" mat-button>Grand Jry Case Calander</button>
+        
+         <button class="btn1" [matMenuTriggerFor]="lvl1reports" mat-button>Reports</button>
+        
+         <mat-menu #lvl1reports="matMenu">
+           
+            <button class="btn2" routerLink="non-financial-record" mat-menu-item>Non-Financial Records Received</button>
+            <mat-divider></mat-divider>
+            <button class="btn2" mat-menu-item>Subpoenas per Defendant</button>
+            <mat-divider></mat-divider>
+            <button class="btn2" mat-menu-item>Grand Jury Case without Case Number</button>
+       
+         </mat-menu>
+         <button class="btn1" routerLink="reference-data-manager" mat-button>Reference Data Manager</button>
+         <button class="btn1" routerLink="user-manager" mat-button>User Manager</button>
+    
+        <span class="field-spacer"></span>
+  
+        <select class="form-select" aria-label="Default select example">
+          <option selected>Executive Office for United States' Attorneys 123456, Test Court O'One</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select>
+      
+      </mat-toolbar-row>
+      <!-- <mat-toolbar-row class="message-tag">
+        <p class="search-header"></p>
+        </mat-toolbar-row> -->
+      </mat-toolbar>
+    </p>
+  
+  </div>
